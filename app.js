@@ -3,7 +3,7 @@ angular
     'ui.router'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/')
     $stateProvider
       .state('home', {
         url: '/',
@@ -16,3 +16,5 @@ angular
         controller: 'aboutCtrl'
       })
   }])
+
+console.log("app.js");
