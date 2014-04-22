@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="project">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Daming Angular JS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <div class="container" ng-app="app">
+            <header ng-include="'nav.html'"></header>
+            <div ui-view></div>
+            <footer ng-include="'footer.html'"></footer>
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="friends.js"></script>
+        <script src="aboutCtrl.js"></script>
+        <script src="homeCtrl.js"></script>
+
+        <script src="jquery/jquery.js"></script>
+        <script src="angular/angular.js"></script>
+        <script src="ui-router/release/angular-ui-router.js"></script>
+           
+        <!--
+            ignore sass-bootstrap for now
+        -->
+    </body>
+</html>
